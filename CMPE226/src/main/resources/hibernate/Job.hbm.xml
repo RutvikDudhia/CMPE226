@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated May 1, 2016 5:36:30 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="model.Job" table="Job">
+        <id name="JobId" type="java.lang.Long">
+            <column name="JobId" />
+            <generator class="assigned" />
+        </id>
+        <property name="JobTitle" type="java.lang.String">
+            <column name="JobTitle" />
+        </property>
+        <property name="Salary" type="int">
+            <column name="Salary" />
+        </property>
+        <property name="StartDate" type="java.sql.Date">
+            <column name="StartDate" />
+        </property>
+        <property name="HrManagerId" type="java.lang.Long">
+            <column name="HrManagerId" />
+        </property>
+    </class>
+</hibernate-mapping>

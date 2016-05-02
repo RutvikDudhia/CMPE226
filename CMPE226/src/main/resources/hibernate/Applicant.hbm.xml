@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated May 1, 2016 5:36:30 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="model.Applicant" table="Applicant">
+        <id name="ApplicantId" type="java.lang.Long">
+            <column name="ApplicantId" />
+            <generator class="assigned" />
+        </id>
+        <property name="ApplicantName" type="java.lang.String">
+            <column name="ApplicantName" />
+        </property>
+        <property name="ApplicantGender" type="java.lang.String">
+            <column name="ApplicantGender" />
+        </property>
+        <property name="ApplicantCountry" type="java.lang.String">
+            <column name="ApplicantCountry" />
+        </property>
+        <property name="ApplicantEmail" type="java.lang.String">
+            <column name="ApplicantEmail" />
+        </property>
+    </class>
+</hibernate-mapping>
