@@ -14,15 +14,29 @@ public class UserImpl extends HibernateDaoSupport implements UserDAO {
 
 
 	@Override
-	public void save(User u) {
-		// TODO Auto-generated method stub
+	public void save(User user) {
+		getHibernateTemplate().save(user);
 
 	}
 
+
 	@Override
-	public List<User> getUser(String userId) {
-		// TODO Auto-generated method stub
-		return null;
+	public void update(User user) {
+		getHibernateTemplate().update(user);		
+	}
+
+	@Override
+	public void delete(User user) {
+		getHibernateTemplate().delete(user);
+		
+	}
+
+	@Override
+	public User findByUserId(Long userId) {
+		List list = getHibernateTemplate().find(
+                "from Stock where stockCode=?",userId
+          );
+		return (User)list.get(0);
 	}
 
 }

@@ -9,8 +9,8 @@
          <context:component-scan
             base-package="org.springframework.samples.service"/>  -->
 
-<import resource="DataSource.xml"/>
-<import resource="Hibernate.xml"/>
+<import resource="../database/DataSource.xml"/>
+<import resource="../database/Hibernate.xml"/>
 	
 <!-- Beans Declaration -->
 

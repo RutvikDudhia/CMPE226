@@ -1,11 +1,8 @@
-package dao;
-
-
-import java.util.List;
+package bo;
 
 import model.User;
 
-public interface UserDAO {
+public interface UserBo {
 	
 	void save(User user);
 	void update(User user);
