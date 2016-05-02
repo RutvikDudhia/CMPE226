@@ -8,8 +8,7 @@ public class App {
 		ApplicationContext context = new ClassPathXmlApplicationContext(
 				"springconfig.xml");
 
-	//	HelloWorld obj = (HelloWorld) context.getBean("helloBean");
-	//	obj.printHello();
+	
 	}
 }
 

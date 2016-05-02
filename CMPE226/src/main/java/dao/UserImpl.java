@@ -3,16 +3,15 @@ package dao;
 import java.util.List;
 
 import org.hibernate.SessionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
 
 import model.User;
 
-public class UserImpl implements UserDAO {
+public class UserImpl extends HibernateDaoSupport implements UserDAO {
 
 	private SessionFactory sessionFactory;
 
-	public void setSessionFactory(SessionFactory sessionFactory) {
-		this.sessionFactory = sessionFactory;
-	}
 
 	@Override
 	public void save(User u) {
