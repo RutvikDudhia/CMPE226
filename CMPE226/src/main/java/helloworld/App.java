@@ -11,7 +11,7 @@ public class App {
 		ApplicationContext context = new ClassPathXmlApplicationContext(
 				"springconfig.xml");
 		UserBo userBo = (UserBo) context.getBean("userBo");
-		User user = userBo.findByUserId((long) 1);
+		User user = userBo.findByUserId(1);
 		System.out.println(user.getPassword());
 
 	

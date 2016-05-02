@@ -20,20 +20,20 @@ public class UserBoIml implements UserBo {
 
 	@Override
 	public void update(User user) {
-		//userDao.ud
+		userDao.update(user);
 		
 	}
 
 	@Override
 	public void delete(User user) {
-		// TODO Auto-generated method stub
+		userDao.delete(user);
 		
 	}
 
 	@Override
-	public User findByUserId(Long userId) {
+	public User findByUserId(int userId) {
 		// TODO Auto-generated method stub
-		return null;
+		return userDao.findByUserId(userId);
 	}
 
 }

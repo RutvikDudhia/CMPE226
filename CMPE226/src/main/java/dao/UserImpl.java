@@ -32,7 +32,7 @@ public class UserImpl extends HibernateDaoSupport implements UserDAO {
 	}
 
 	@Override
-	public User findByUserId(Long userId) {
+	public User findByUserId(int userId) {
 		List list = getHibernateTemplate().find(
                 "from Stock where stockCode=?",userId
           );
